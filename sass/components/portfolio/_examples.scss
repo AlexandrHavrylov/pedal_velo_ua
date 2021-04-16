@@ -16,12 +16,7 @@
 .examples__element {
   @media screen and (min-width: $tablet) {
     margin: 15px;
-    flex-basis: calc((100% - 30px * 2) / 2);
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin: 15px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 30px * 4) / 4);
   }
 }
 
@@ -87,7 +82,7 @@
 
 .example__text {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid black;
   border-top: none;
 
   @media screen and (min-width: $tablet) {
@@ -98,7 +93,7 @@
 .example__title {
   color: $primary-text-color;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
 
