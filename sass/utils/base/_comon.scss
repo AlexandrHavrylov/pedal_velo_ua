@@ -1,8 +1,14 @@
 body {
   color: var(--primary-text-color);
-  background-image: linear-gradient(to top left, white, black);
-  font-family: Roboto, sans-serif;
+  font-family: Comfortaa, sans-serif;
   letter-spacing: 0.03em;
+  background-image: linear-gradient(to top left, white, black);
+  background-repeat: no-repeat;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -58,4 +64,8 @@ address {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+.accent__text {
+  color: $accent-color;
 }

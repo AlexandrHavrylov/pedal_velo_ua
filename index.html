@@ -8,10 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Zen+Dots&display=swap"
       rel="stylesheet"
     />
 
@@ -19,28 +19,18 @@
   </head>
   <body>
     <!--HEADER-->
-
     <header class="page-header">
-      <div class="container container--nav">
-        <nav class="nav">
-          <img src="./img/logo.JPG" alt="" width="100px" />
-          <a class="logo logo--header" href="./index.html">
-            <span class="logo__text">PE</span>DAL</a
-          >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="container container--header">
+        <a class="logo" href="./index.html">
+          <svg class="logo__icon" width="100px">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+          <span class="logo__text">PEDAL</span>
+        </a>
+        <div class="text-wrapper">
+          <p class="header__title">PEDAL</p>
+          <h1 class="header__text">Лучший прокат велосипедов в городе Киев</h1>
+        </div>
 
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -52,325 +42,181 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380975290423">
-              <svg class="contacts__icon smartphone" width="10" height="16">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="16" height="35">
                 <use href="./img/sprite.svg#icon-smartphone"></use>
               </svg>
-              +38 097 529 04 11</a
-            >
-          </li>
-        </ul>
-        <button type="button" class="menu__button js-open-menu">
-          <svg width="40px" height="40px">
-            <use href="./img/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-      </div>
-    </header>
-    <!-- MAIN-->
-    <main>
-      <!-- Main SECTION-->
-      <section class="hero">
-        <h1 class="hero__title">
-          Лучший <span class="hero__text">ВЕЛОПРОКАТ</span> <br />
-          города Киев
-        </h1>
-
-        <ul class="examples__list">
-          <li class="examples__element">
-            <a class="example__link" href="#">
-              <div class="thumb">
-                <img class="no-gap" src="./img/velo/1.jpg" alt="велосипед" />
-                <div class="overlay">
-                  <p class="overlay__text">
-                    Для оренды велоспеда Вам необходимо оставить 5000 грн либо
-                    500 грн + докумет удостоверающий личность в залог
-                  </p>
-                </div>
-              </div>
-
-              <div class="example__text">
-                <h2 class="example__title">Аренда 1 час</h2>
-                <p class="example__type">50 грн</p>
-              </div>
-            </a>
-          </li>
-          <li class="examples__element">
-            <a class="example__link" href="">
-              <div class="thumb">
-                <img class="no-gap" src="./img/velo/2.jpg" alt="велосипед" />
-                <div class="overlay">
-                  <p class="overlay__text">
-                    Для оренды велоспеда Вам необходимо оставить 5000 грн либо
-                    500 грн + докумет удостоверающий личность в залог
-                  </p>
-                </div>
-              </div>
-              <div class="example__text">
-                <h2 class="example__title">Аренда 3 часа</h2>
-                <p class="example__type">130 грн</p>
-              </div>
-            </a>
-          </li>
-          <li class="examples__element">
-            <a class="example__link" href="#">
-              <div class="thumb">
-                <img class="no-gap" src="./img/velo/3.jpg" alt="велосипед" />
-                <div class="overlay">
-                  <p class="overlay__text">
-                    Для оренды велоспеда Вам необходимо оставить 5000 грн либо
-                    500 грн + докумет удостоверающий личность в залог
-                  </p>
-                </div>
-              </div>
-              <div class="example__text">
-                <h2 class="example__title">
-                  Аренда на день (с 10:00 до 22:00)
-                </h2>
-                <p class="example__type">200 грн</p>
-              </div>
-            </a>
-          </li>
-          <li class="examples__element">
-            <a class="example__link" href="#">
-              <div class="thumb">
-                <img class="no-gap" src="./img/velo/4.jpg" alt="велосипед" />
-                <div class="overlay">
-                  <p class="overlay__text">
-                    Для оренды велоспеда Вам необходимо оставить 5000 грн либо
-                    500 грн + докумет удостоверающий личность в залог
-                  </p>
-                </div>
-              </div>
-              <div class="example__text">
-                <h2 class="example__title">Аренда на сутки</h2>
-                <p class="example__type">300 грн</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!-- FOOTER-->
-    <footer class="footer">
-      <div class="container container--footer">
-        <div class="footer-wraper">
-          <div class="address-container">
-            <a class="logo logo--footer" href="./index.html"
-              ><span class="logo__text">Ped</span>AL</a
-            >
-            <address class="address">
-              <span class="address__text"> г. Киев</span>
-              <ul class="address__list">
-                <li class="address__item">
-                  <a class="address__link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a class="address__link" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="network">
-            <p class="network__text">присоединяйтесь</p>
-            <ul class="network__list network__list--footer">
-              <li class="network__item">
-                <a
-                  target="_blank"
-                  class="network__link network__link--white"
-                  href="https://www.instagram.com/pedal_velo_ua/"
-                >
-                  <svg class="network__icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="network__item">
-                <a class="network__link network__link--white" href="#">
-                  <svg class="network__icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="network__item">
-                <a class="network__link network__link--white" href="#">
-                  <svg class="network__icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="network__item">
-                <a class="network__link network__link--white" href="#">
-                  <svg class="network__icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- BACKDROP -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="callback-form">
-          <label for="username" class="callback-form__label"> Имя </label>
-          <div class="callback-form__wraper">
-            <input
-              type="text"
-              name="username"
-              id="username"
-              class="callback-form__input"
-            />
-            <svg class="callback-form__icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-person"></use>
-            </svg>
-          </div>
-
-          <label for="tel" class="callback-form__label"> Телефон </label>
-
-          <div class="callback-form__wraper">
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              class="callback-form__input"
-            />
-            <svg class="callback-form__icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-phone"></use>
-            </svg>
-          </div>
-
-          <label for="email" class="callback-form__label"> Почта </label>
-          <div class="callback-form__wraper">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="callback-form__input"
-            />
-            <svg class="callback-form__icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-email"></use>
-            </svg>
-          </div>
-
-          <label class="callback-form__label">
-            Комментарий
-            <textarea
-              name="feedback"
-              rows="5"
-              placeholder="Введите текст"
-              class="callback-form__input callback-form__input--feedback"
-            ></textarea>
-          </label>
-        </form>
-
-        <form class="checkbox">
-          <label class="checkbox__label">
-            <input class="checkbox__input" type="checkbox" />
-            <svg
-              class="checkbox__icon checkbox__icon--check"
-              width="16"
-              height="15"
-            >
-              <use href="./img/sprite.svg#icon-check"></use>
-            </svg>
-            <svg
-              class="checkbox__icon checkbox__icon--uncheck"
-              width="16"
-              height="15"
-            >
-              <use href="./img/sprite.svg#icon-uncheck"></use>
-            </svg>
-            <span class="checkbox__text"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox__link" href="#">Условия договора</a>
-            </span>
-          </label>
-        </form>
-
-        <button class="submit-button" type="submit">Отправить</button>
-
-        <button class="close-button" data-modal-close>
-          <svg class="close-button__icon" width="18" height="18">
-            <use href="./img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!--MOBILE MENU-->
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <ul class="mobile-nav">
-        <li class="mobile-nav__item">
-          <a
-            href="./index.html"
-            class="mobile-nav__link mobile-nav__link--active"
-          >
-            Студия</a
-          >
-        </li>
-        <li class="mobile-nav__item">
-          <a href="./portfolio.html" class="mobile-nav__link"> Портфолио</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="#" class="mobile-nav__link">Контакты</a>
-        </li>
-      </ul>
-
-      <address>
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__item">
-            <a
-              href="tel:+380961111111"
-              class="mobile-contacts__link mobile-contacts__link--cell"
-            >
               +38 096 111 11 11</a
             >
           </li>
-          <li class="mobile-contacts__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="mobile-contacts__link mobile-contacts__link--mail"
-            >
-              info@devstudio.com</a
-            >
-          </li>
         </ul>
+      </div>
+    </header>
+    <main>
 
-        <ul class="mobile-networks">
-          <li class="mobile-networks__item">
-            <a href="#" class="mobile-networks__link">Instagram</a>
-          </li>
-          <li class="mobile-networks__item">
-            <a href="#" class="mobile-networks__link">Twitter</a>
-          </li>
-          <li class="mobile-networks__item">
-            <a href="#" class="mobile-networks__link">Facebook</a>
-          </li>
-          <li class="mobile-networks__item">
-            <a href="#" class="mobile-networks__link">LinkedIn</a>
-          </li>
-        </ul>
-      </address>
-      <button
-        type="button"
-        class="menu__button menu__button--close js-close-menu"
-      >
-        <svg class="icon-close--mobile" width="40" height="40">
-          <use href="./img/sprite.svg#icon-mobile-close"></use>
-        </svg>
-      </button>
-    </div>
+      <!--FEATURES-->
+      <section class="features">
+        <div class="container">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="85" height="70">
+                  <use href="./img/symbol-defs.svg#icon-bike""></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Широкий ассортимент</h3>
+              <p class="features__text">
+                Мы подберём для Вас идеальный велосипед, который удовлетворит
+                все Ваши пожелания и оставит только приятные впечатления от
+                катания
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+                  <use href="./img/symbol-defs.svg#icon-build""></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Безопасность</h3>
+              <p class="features__text">
+                Каждый велосипед проходит предварительный технический осмотр и
+                проверку всех систем перед тем как попадёт к Вам
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./img/symbol-defs.svg#icon-users""></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Простота</h3>
+              <p class="features__text">
+                Не нужно больше захламлять балкон, или искать соседа с гаражём.
+                Просто позвони нам и устрой для себя и близких идеальные
+                покатушки.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./img/symbol-defs.svg#icon-smiley"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Гибкий подход</h3>
+              <p class="features__text">
+                Найдём идеальное решение и подберем именно тот вариант котоырй
+                нужен Вам
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--BIKES-->
+            <section class="examples">
+        <div class="container">
+          <ul class="examples__list">
+            <li class="examples__element">
+              <a class="example__link" href="#">
+                <div class="thumb">
+                  <img
+                    class="no-gap"
+            
+                    src="./img/velo/1.jpg"
+                    alt="Велики"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__text">
+                  <h2 class="example__title">Аренда на 1 час</h2>
+                  <p class="example__type">50 гривен</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__element">
+              <a class="example__link" href="">
+                <div class="thumb">
+                  <img
+                    class="no-gap"
+                     src="./img/velo/2.jpg"
+                    alt="Велики"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="example__text">
+                  <h2 class="example__title">
+                    Аренда на 3 часа
+                  </h2>
+                  <p class="example__type">130 гривен</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__element">
+              <a class="example__link" href="#">
+                <div class="thumb">
+                  <img
+                    class="no-gap"
+                 src="./img/velo/2.jpg"
+                    alt="Велики"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="example__text">
+                  <h2 class="example__title">Аренда на день с 10 до 22</h2>
+                  <p class="example__type">250 гривен</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__element">
+              <a class="example__link" href="#">
+                <div class="thumb">
+                  <img
+                    class="no-gap"
+                        src="./img/velo/4.jpg"
+                    alt="Велики"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="example__text">
+                  <h2 class="example__title">Аренда на сутки</h2>
+                  <p class="example__type">300 гривен</p>
+                </div>
+              </a>
+            </li>
+            </ul>
+            </div>
+            </section>
+    </main>
   </body>
 </html>

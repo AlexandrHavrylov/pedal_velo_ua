@@ -32,7 +32,7 @@
 }
 
 .features__thumb {
-  background-color: $secondary-bg-color;
+  background-color: transparent;
 
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
+  text-align: center;
   margin: 0;
   padding: 0;
 
@@ -59,7 +59,7 @@
 }
 
 .features__text {
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   font-weight: 400;
   font-size: 14px;
@@ -67,4 +67,8 @@
 
   margin: 0;
   padding: 0;
+}
+
+.features__icon {
+  fill: $accent-color;
 }

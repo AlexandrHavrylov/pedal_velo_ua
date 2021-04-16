@@ -1,0 +1,84 @@
+.page-header {
+  border-bottom: 2px solid black;
+}
+
+.container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+  color: $accent-color;
+  width: 200px;
+  height: 200px;
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.header__title {
+  font-family: 'Zen Dots', cursive;
+  font-size: 50px;
+  letter-spacing: 0.6em;
+
+  text-align: center;
+  color: $accent-color;
+}
+
+.header__text {
+  font-size: 30px;
+}
+
+/* Контакты в хедере */
+
+.contacts__list {
+  @extend %list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.contacts__item {
+  margin-top: 20px;
+}
+
+.contacts__link {
+  color: $primary-text-color;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--bazier);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__icon {
+  margin-right: 8px;
+  text-align: center;
+  fill: currentColor;
+}
