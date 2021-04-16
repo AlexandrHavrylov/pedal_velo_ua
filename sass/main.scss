@@ -1,0 +1,28 @@
+@import '../sass/utils/variables';
+@import '../sass/utils/placeholders';
+@import '../sass/utils/base/comon';
+@import '../sass/components/logo';
+@import '../sass/components/networks';
+
+@import '../sass/components/header/page-header';
+@import '../sass/components/header/nav';
+@import '../sass/components/header/contacts';
+
+@import '../sass/components/main/hero-section';
+
+@import '../sass/components/main/features-section';
+@import '../sass/components/main/we-do-section';
+@import '../sass/components/main/team-section';
+@import '../sass/components/main/clients';
+@import '../sass/components/footer/page-footer';
+@import '../sass/components/footer/address';
+@import '../sass/components/footer/subscribe';
+@import '../sass/components/backdrop/backdrop';
+@import '../sass/components/backdrop/modal';
+@import '../sass/components/backdrop/callback-form';
+@import '../sass/components/backdrop/chekbox';
+@import '../sass/components/portfolio/portfolio-page';
+@import '../sass/components/portfolio/portfolio-buttons';
+@import '../sass/components/portfolio/examples';
+
+@import '../sass/components/header/mobile-menu';
