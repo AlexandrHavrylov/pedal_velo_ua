@@ -286,6 +286,10 @@ address {
 }
 
 /* Список примеров */
+.examples {
+  padding: 25px;
+}
+
 @media screen and (max-width: 767px) {
   .examples__list {
     margin-top: 40px;

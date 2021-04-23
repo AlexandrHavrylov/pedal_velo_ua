@@ -1,4 +1,7 @@
 /* Список примеров */
+.examples {
+  padding: 25px;
+}
 .examples__list {
   @extend %list;
 
