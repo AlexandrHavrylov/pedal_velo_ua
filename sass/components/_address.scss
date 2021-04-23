@@ -5,8 +5,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.logo--footer {
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
+}
 .address__list {
   @extend %list;
 }
