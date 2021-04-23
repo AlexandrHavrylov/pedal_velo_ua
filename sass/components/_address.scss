@@ -1,0 +1,110 @@
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__list {
+  @extend %list;
+}
+
+.address__list,
+.address__item:last-child {
+  margin-top: 8px;
+}
+
+.address__text {
+  color: $primary-bg-color;
+}
+
+.address__link {
+  color: $footer-address-color;
+  transition: color 250ms $bazier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.network__list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  margin-top: 16px;
+
+  &--footer {
+    margin-top: 20px;
+  }
+}
+
+.network__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+
+  &--grey {
+    color: #afb1b8;
+    transition: color 250ms $bazier, background-color 250ms $bazier;
+  }
+
+  &--white {
+    color: $white-color;
+    background-color: $network-bg-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    outline: none;
+  }
+}
+
+.network__icon {
+  fill: currentColor;
+  width: 50px;
+  height: 50px;
+}
+
+/* В ФУТЕРЕ */
+
+.network {
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
+}
+
+.network__text {
+  margin: 0;
+  padding: 0px;
+
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

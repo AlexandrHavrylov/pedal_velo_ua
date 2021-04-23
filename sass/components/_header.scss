@@ -3,38 +3,40 @@
 }
 
 .container--header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: black;
-  color: $accent-color;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  padding-top: 25px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .logo__icon {
-  fill: currentColor;
+  width: 100px;
+
+  @media screen and (min-width: $tablet) {
+    width: 150px;
+  }
 }
 
 .header__title {
   font-family: 'Zen Dots', cursive;
-  font-size: 50px;
+  font-size: 25px;
   letter-spacing: 0.6em;
 
   text-align: center;
   color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 50px;
+  }
 }
 
 .header__text {
-  font-size: 30px;
+  font-size: 20px;
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 /* Контакты в хедере */
@@ -43,11 +45,14 @@
   @extend %list;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .contacts__item {
